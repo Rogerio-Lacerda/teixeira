@@ -3,13 +3,13 @@
  position: relative;
 }
 
-.watch-slider{
+.watch-slider, .watch-slider2{
   overflow: hidden;
 }
 
 .venda-1 > a img{
   width: 400px;
-  /* min-width: 400px; */
+  min-width: 400px;
   border-radius: 4px;
 }
 
@@ -57,11 +57,11 @@
   /* font-size: 0.6rem; */
 }
 
-.watch-slider .venda-1{
+.watch-slider .venda-1, .watch-slider2 .venda-1{
   transform: scale(0.9);
 }
 
-.watch-slider .venda-1.slick-center{
+.watch-slider .venda-1.slick-center, .watch-slider2 .venda-1.slick-center{
  transform: scale(1);
 }
 
