@@ -13,6 +13,7 @@
 }
 
 .form-contato {
+  min-width: 800px;
   gap: 24px;
 }
 

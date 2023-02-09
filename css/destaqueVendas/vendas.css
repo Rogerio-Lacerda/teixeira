@@ -9,7 +9,6 @@
 
 .venda-1 > a img{
   width: 400px;
-  min-width: 400px;
   border-radius: 4px;
 }
 
@@ -156,6 +155,10 @@
   .titulo-vendas{
     font-size: 1.8rem;
     margin-bottom: 10px;
+  }
+
+  .seta-direita img, .seta-esquerda img{
+    width: 20px;
   }
 }
 
