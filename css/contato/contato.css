@@ -42,13 +42,13 @@
   margin-top: 16px;
 }
 
-.localizacao{
+.localizacao {
   display: grid;
   gap: 40px;
   justify-items: center;
 }
 
-iframe{
+iframe {
   border-radius: 8px;
   margin-bottom: 20px;
   height: 400px;
@@ -59,7 +59,12 @@ iframe{
     width: 600px;
   }
 
-  iframe{
+  .form-contato input,
+  .form-contato textarea {
+    max-width: 500px;
+  }
+
+  iframe {
     width: 600px;
   }
 }
@@ -73,21 +78,26 @@ iframe{
     width: 400px;
   }
 
+  .form-contato input,
+  .form-contato textarea {
+    max-width: 300px;
+  }
+
   .contato>h3 {
     font-size: 1rem;
   }
 
-  iframe{
+  iframe {
     width: 400px;
   }
 }
 
-@media(max-width: 540px){
-  .localizacao h2{
+@media(max-width: 540px) {
+  .localizacao h2 {
     font-size: 2rem;
   }
 
-  iframe{
+  iframe {
     height: 300px;
   }
 }
@@ -95,6 +105,12 @@ iframe{
 @media(max-width: 450px) {
   .form-contato {
     width: 300px;
+  }
+
+  .form-contato input,
+  .form-contato textarea {
+    max-width: 240px;
+    justify-self: start;
   }
 
   .contato>h3 {
@@ -111,7 +127,7 @@ iframe{
     background-color: var(--cor-p2);
   }
 
-  iframe{
+  iframe {
     width: 300px;
   }
 }
