@@ -29,7 +29,6 @@
   border-radius: 4px;
   display: grid;
   grid-template-columns: 1fr;
-  min-width: 800px;
 }
 
 .proprietario{
@@ -87,7 +86,7 @@
 
 @media(max-width: 900px){
   .form-cadastre{
-    min-width: initial;
+   width: initial;
   }
 }
 
@@ -113,7 +112,7 @@
   }
 
   .proprietario input, .imovel input, .proprietario textarea, .imovel textarea{
-    min-width: 300px;
+    width: 300px;
   }
 
   .cadastre > h3{
@@ -153,6 +152,6 @@
 
 @media(max-width: 380px){
   .proprietario input, .imovel input, .proprietario textarea, .imovel textarea{
-    min-width: 200px;
+    width: 200px;
   }
 }

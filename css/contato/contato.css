@@ -13,7 +13,7 @@
 }
 
 .form-contato {
-  min-width: 800px;
+  width: 800px;
   gap: 24px;
 }
 
@@ -56,7 +56,7 @@ iframe{
 
 @media(max-width: 900px) {
   .form-contato {
-    min-width: 600px;
+    width: 600px;
   }
 
   iframe{
@@ -70,7 +70,7 @@ iframe{
   }
 
   .form-contato {
-    min-width: 400px;
+    width: 400px;
   }
 
   .contato>h3 {
@@ -94,7 +94,7 @@ iframe{
 
 @media(max-width: 450px) {
   .form-contato {
-    min-width: 300px;
+    width: 300px;
   }
 
   .contato>h3 {
