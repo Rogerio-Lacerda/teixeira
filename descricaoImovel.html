@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teixeira Imobiliaria | Descricão Imóvel</title>
+  <meta name="description" content="A TEIXEIRA IMÓVEIS conta atualmente e coloca a sua disposição um quadro de funcionários e colaboradores treinados para oferecer-lhe soluções em qualquer seguimento do ramo imobiliário, tais como, compra, venda, locação e administração de imóveis.">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="popup-wrapper">
+      <div class="popup">
+        <div class="popup-close font-2-l cor-0">x</div>
+        <h2 class="font-1-xl cor-0">Login</h2>
+        <form action="" class="form-login font-2-l cor-0">
+          <div>
+            <label for="usuario">Nome de usuário</label>
+            <input type="text" name="usuario" id="usuario">
+          </div>
+          <div>
+            <label for="nome">Senha</label>
+            <input type="password" name="senha" id="senha">
+          </div>
+        </form>
+        <p class="font-2-m cor-0 p-login">Não tem conta? <a href="./cadastro.html" target="_blank">cadastre-se</a></p>
+      </div>
+    </div>
+    <a class="logo-header" href="./index.html">
+      <div>
+        <h1 class="h1-logo-header cor-p2">Teixeira</h1>
+        <p class="p-logo-header cor-0">IMOBILIÁRIA</p>
+        <span class="span-logo-header cor-0">CRECI SP 19618-J</span>
+      </div>
+    </a>
+  
+    <nav aria-label="Primária">
+      <div class="menu-hamburguer font-1-l cor-0">
+        <img src="./images/menu-burguer.svg" alt="">
+        <a href="#">Menu</a>
+      </div>
+  
+      <ul class="header-menu font-1-m cor-0">
+        <li><a href="./sobre.html">Empresa</a></li>
+        <li><a href="./servicos.html">Serviços</a></li>
+        <li><a href="./cadastre.html">Cadastre seu imóvel</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+        <li class="container-submenu" id="container-submenu" onmouseover="document.getElementById('submenu').style.display = 'grid'" onmouseout="document.getElementById('submenu').style.display = 'none'">
+          <a href="#">Área do Cliente</a>
+          <ul id="submenu">
+            <li><a href="https://www3.sgn2.com.br/sgnweb/extrato-site.php?cliente=033" target="_blank">Extrato do locador</a></li>
+            <li><a href="https://www3.sgn2.com.br/sgnweb/boleto-site.php?cliente=033" target="_blank">2º via do boleto</a></li>
+            <li><a href="https://www3.sgn2.com.br/sgnweb/informe-site.php?cliente=033" target="_blank">informe de rendimentos</a></li>
+          </ul>
+        </li>
+        <li class="header-numeros ">
+          <div>
+            <a href="https://wa.me/message/GALVCI4HECVLH1" class="header-whats">
+              <img src="./images/logo-whats.png" alt="Número Whatssap"> 11 99370-3697
+            </a>
+          </div>
+          <div>
+            <a href="tel:+55113902-2882" class="header-tel">
+              <img src="./images/telefone.png" alt="Número Telefone">11 3902-2882
+            </a>
+          </div>
+        </li>
+        <a href="#" id="btn-entrar" class="header-botao font-2-l cor-0"><img src="./images/botao-de-login.png" alt=""> Entrar</a>
+      </ul>
+  
+    </nav>
+  
+    <form class="orcamento" action="" method="post">
+  
+      <a href="#" class="filtrar font-1-m cor-5"><img src="./images/filtro.png" alt="">
+        <p class="filtrar-p">Filtrar</p>
+      </a>
+  
+      <div class="form-orcamento">
+  
+        <div class="form-finalidade font-1-m cor-0">
+          <h4 class="cor-0 font-2-m">Finalidade</h4>
+          <select id="finalidade">
+            <option value="venda">Venda</option>
+            <option value="locacao">Locaçao</option>
+          </select>
+        </div>
+  
+        <div class="form-finalidade font-1-m cor-0">
+          <h4 class="cor-0 font-2-m">Tipo</h4>
+          <select id="tipo">
+            <option value="todos">Todos</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="casa">Casa</option>
+            <option value="casaTerrea">Casa Térrea</option>
+            <option value="chacara">Chacára</option>
+            <option value="galpao">Galpão</option>
+            <option value="lojaComercial">Loja Comercial</option>
+            <option value="predio">Predio</option>
+            <option value="sala">Sala</option>
+            <option value="salao">Salão</option>
+            <option value="sobrado">Sobrado</option>
+            <option value="terreno">Terreno</option>
+          </select>
+        </div>
+  
+        <div class="form-finalidade font-1-m cor-0">
+          <h4 class="cor-0 font-2-m">Cidade</h4>
+          <select id="cidade">
+            <option value="todasCidades">Todos</option>
+            <option value="atibaia">Atibaia</option>
+            <option value="barueri">Barueri</option>
+            <option value="cajamar">Cajamar</option>
+            <option value="cambuiMg">Cambuí-MG</option>
+            <option value="campoLimpo">Campo Limpo Paulista</option>
+            <option value="caraguatatuba">Caraguatatuba</option>
+            <option value="carapicuiba">Carapícuiba</option>
+            <option value="cotia">Cotia</option>
+            <option value="francoRocha">Franco da Rocha</option>
+            <option value="jarimu">Jarimu</option>
+            <option value="maripora">Mariporã</option>
+            <option value="osasco">Osasco</option>
+            <option value="pirajui">Pirajuí</option>
+            <option value="praiaEnseada">Praia da Enseada</option>
+            <option value="praiaGrande">Praia Grande</option>
+            <option value="sabino">Sabino</option>
+            <option value="santanaParnaiba">Santana de Parnaíba</option>
+            <option value="saoPaulo">São Paulo</option>
+            <option value="saoRoque">São Roque</option>
+            <option value="taboaoSerra">Taboao da Serra</option>
+            <option value="tremenbe">Tremenbé</option>
+          </select>
+        </div>
+  
+        <div class="form-finalidade font-1-m cor-0">
+          <h4 class="cor-0 font-2-m">Bairro</h4>
+          <select id="barirro">
+            <option value="todosBairros">Todos</option>
+          </select>
+        </div>
+  
+        <div class="form-finalidade form-referencia">
+          <label class="cor-0 font-2-m" for="Tipo">Referência</label>
+          <input type="number" class="cor-5">
+        </div>
+  
+        <div class="form-finalidade font-1-m cor-0">
+          <h4 class="cor-0 font-2-m">Dormitoríos</h4>
+          <select id="finalidade">
+            <option value="qualquerDorm">Qualquer</option>
+            <option value="umDorm">1</option>
+            <option value="doisDorm">2</option>
+            <option value="tresDorm">3</option>
+            <option value="quatroDorm">4</option>
+            <option value="cincoDormMais">5 ou Mais</option>
+          </select>
+        </div>
+  
+  
+        <div class="form-finalidade font-1-m cor-0">
+          <h4 class="cor-0 font-2-m">Vagas</h4>
+          <select id="finalidade">
+            <option value="qualquerVaga">Qualquer</option>
+            <option value="umaVaga">1</option>
+            <option value="duasVaga">2</option>
+            <option value="tresVagaMais">3 ou Mais</option>
+          </select>
+        </div>
+  
+        <div class="form-finalidade font-1-m cor-0">
+          <h4 class="cor-0 font-2-m">Banheiros</h4>
+          <select id="banheiros">
+            <option value="qualquerBanheiro">Qualquer</option>
+            <option value="umBanheiro">1</option>
+            <option value="doisBanheiro">2</option>
+            <option value="tresBanheiroMais">3 ou Mais</option>
+          </select>
+        </div>
+  
+        <div class="form-finalidade">
+          <label class="cor-0 font-2-m" for="Tipo">Valor Maxímo</label>
+          <input type="checked" class="cor-5">
+        </div>
+  
+        <a id="btn-orcamento" href="#" class="btn-orcamento font-2-m cor-0">Pesquisar <img src="./images/lupa.png" alt=""></a>
+  
+      </div>
+    </form>
+  </header>
+  <section class="descri-imovel">
+    <h1 class="font-1-xl cor-p1">Casa Térrea <span class="cor-10">-Jardim Santo Elias - São Paulo</span></h1>
+
+    <div class="container-imagens">
+      <div class="descri-imagens">
+        <img src="./images/imagens/casaTerrea.jpg" alt="">
+        <img src="./images/imagens/casaTerrea.jpg" alt="">
+        <img src="./images/imagens/casaTerrea.jpg" alt="">
+        <img src="./images/imagens/casaTerrea.jpg" alt="">
+        <img src="./images/imagens/casaTerrea.jpg" alt="">
+      </div>
+
+      <div id="arrow-prev" class="seta-esquerda-imovel">
+        <img src="./images/icones/arrow_prev.svg" alt="">
+      </div>
+      <div id="arrow-next" class="seta-direita-imovel">
+        <img src="./images/icones/arrow_next.svg" alt="">
+      </div>
+    </div>
+
+    <div class="descri-conteudo">
+      <h3 class="font-1-xl cor-p1">Detalhes do Imóvel</h3>
+      <div class="descri-item font-2-l cor-12">
+        <img src="./images/imagens/garagem.png" alt="">
+        <p>4 Vagas</p>
+      </div>
+
+      <div class="descri-item font-2-l cor-12">
+        <img src="./images/imagens/cama.png" alt="">
+        <p>2 Dormitoríos</p>
+      </div>
+
+      <div class="descri-item font-2-l cor-12">
+        <img src="./images/imagens/banheira.png" alt="">
+        <p>2 Banheiros</p>
+      </div>
+
+      <div class="descri-item font-2-l cor-12">
+        <img src="./images/imagens/regua-triangular (1).png" alt="">
+        <p>140m²</p>
+      </div>
+
+      <div class="descri-cond  font-2-l cor-12">
+        <img src="./images/imagens/relatorio.png" alt="">
+        <p>Condomínio</p>
+        <p>R$ 0</p>
+      </div>
+
+      <div class="descri-iptu ult-descri font-2-l cor-12">
+        <img src="./images/imagens/relatorio.png" alt="">
+        <p>IPTU</p>
+        <p>R$ 800,00</p>
+      </div>
+
+      <div class="descri-preco">
+        <h4 class="font-1-l cor-p1">Venda:</h4>
+        <p class="font-1-l-b cor-p1">R$ 290.000,00</p>
+      </div>
+    </div>
+    <section class="descri-sobre">
+      <h2 class="font-1-xl cor-p1">Sobre Este imóvel</h2>
+      <p class="font-1-s cor-12">Casa Térrea Localizada na Região do Santo Elias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium voluptate laudantium odit quibusdam quas ratione commodi sequi, voluptatum ipsam eos.</p>
+    </section>
+  </section>
+
+  <section class="interesse-imovel">
+    <form class="interesse-form form font-1-m cor-0">
+      <h3 class="font-1-l cor-0">Tenho interesse neste imóvel!</h3>
+      <div>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome">
+      </div>
+
+      <div>
+        <label for="telefone">Telefone</label>
+        <input type="text" name="telefone" id="telefone" placeholder="Ex: (11) 9999-9999">
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+      </div>
+
+      <div>
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" rows="3"></textarea>
+      </div>
+
+      <button class="font-1-l-b cor-0 btn">Enviar</button>
+    </form>
+  </section>
+
+
+  <footer class="footer">
+    <div class="titulo-footer cor-p2">
+      <h2>Teixeira</h2>
+      <p class="p-logo-header cor-0">IMOBILIÁRIA</p>
+      <span class="font-1-xs cor-0">CRECI SP 19618-J</span>
+    </div>
+  
+    <ul class="footer-contato font-2-l cor-0">
+      <h4 class="font-1-xl cor-0">Contato</h4>
+      <li class=""><a href="mailto:atendimento@teixeiraimobiliaria.com.br">atendimento@teixeiraimobiliaria.com.br</a></li>
+      <li><a href="tel:+11993703697">+55 11 99370-3697</a></li>
+      <li class="li-3"><a href="tel:+1139022882">+55 11 3902-2882</a></li>
+      <li>Avenida Elíseo Cordeiro de Siqueira, 1008</li>
+      <li class="li-3">Pirituba - São Paulo - SP CEP 05136-001</li>
+      <li class="footer-redes">
+        <a href="#"><img src="./images/instagram.svg" alt=""></a>
+        <a href="#"><img src="./images/facebook.svg" alt=""></a>
+        <a href="#"><img src="./images/youtube.svg" alt="https://www.youtube.com/@teixeiraimobiliaria551"></a>
+      </li>
+    </ul>
+  
+    <ul class="footer-informacoes font-2-l cor-0">
+      <h4 class="font-1-xl cor-0">Informaçoes</h4>
+      <li><a href="#">Empresa</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Cadastre seu imóvel</a></li>
+      <li><a href="#">Contato</a></li>
+      <li><a href="#">Área do Cliente</a></li>
+      <li><a href="#"></a>Politica de privacidade</li>
+      <li><a href="#"></a>Termos e condiçoes de uso</li>
+      <li><a href="./enviarImoveis.html" target="_blank">*Cadastro Imovel</a></li>
+      <li><a href="./descricaoImovel.html">*Descrição Imóvel</a></li>
+    </ul>
+  
+  </footer>
+
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/descriImovel.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

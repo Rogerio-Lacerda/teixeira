@@ -1,0 +1,116 @@
+.contato {
+  display: grid;
+  gap: 60px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.contato>h3 {
+  margin-left: 24px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--cor-p2);
+  max-width: max-content;
+}
+
+.form-contato {
+  gap: 24px;
+}
+
+.form-contato h3::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 5px;
+  background-color: var(--cor-p2);
+}
+
+.form-contato>div {
+  display: grid;
+  gap: 8px;
+}
+
+.form-contato input,
+.form-contato textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font: 400 1.125rem/1.35 "Poppins", san-serif;
+}
+
+.form-contato button {
+  margin-top: 16px;
+}
+
+.localizacao{
+  display: grid;
+  gap: 40px;
+  justify-items: center;
+}
+
+iframe{
+  border-radius: 8px;
+  margin-bottom: 20px;
+  height: 400px;
+}
+
+@media(max-width: 900px) {
+  .form-contato {
+    min-width: 600px;
+  }
+
+  iframe{
+    width: 600px;
+  }
+}
+
+@media(max-width: 640px) {
+  .contato {
+    gap: 30px;
+  }
+
+  .form-contato {
+    min-width: 400px;
+  }
+
+  .contato>h3 {
+    font-size: 1rem;
+  }
+
+  iframe{
+    width: 400px;
+  }
+}
+
+@media(max-width: 540px){
+  .localizacao h2{
+    font-size: 2rem;
+  }
+
+  iframe{
+    height: 300px;
+  }
+}
+
+@media(max-width: 450px) {
+  .form-contato {
+    min-width: 300px;
+  }
+
+  .contato>h3 {
+    font-size: 1.2rem;
+    max-width: 25ch;
+    border-bottom: initial;
+  }
+
+  .contato>h3::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 5px;
+    background-color: var(--cor-p2);
+  }
+
+  iframe{
+    width: 300px;
+  }
+}

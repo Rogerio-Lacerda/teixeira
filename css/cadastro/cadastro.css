@@ -1,0 +1,97 @@
+.bodyCadastro{
+  background-color: var(--cor-p1);
+}
+
+.cadastroUsuario{
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px
+}
+
+fieldset{
+  padding: 16px;
+  border: 2px solid var(--cor-p2);
+  border-radius: 4px;
+  display: grid;
+  gap: 20px;
+}
+
+legend{
+  text-align: center;
+  background-color: var(--cor-p2);
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.inputBox{
+  display: grid;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.inputUser {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+  width: 100%;
+  letter-spacing: 2px;
+  margin-top: 8px;
+}
+
+.inputUser::placeholder{
+  color: var(--cor-6);
+}
+
+.inputTelefone {
+  margin-top: 22px;
+}
+
+.labelInput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.inputUser:focus~.labelInput,
+.inputUser:valid~.labelInput {
+  top: -14px;
+  font-size: 12px;
+  color: var(--cor-p2);
+}
+
+.submitCadastro{
+   padding: 8px;
+   border: 2px solid var(--cor-p2);
+   background-color: var(--cor-p2);
+   width: 200px;
+   border-radius: 4px;
+   justify-self: center;
+   font-size: 1.4rem;
+   cursor: pointer;
+}
+
+#verSenha{
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+
+.msgErroEmail{
+  padding: 8px;
+  background-color: #b72409;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+@media(max-width: 550px){
+  .cadastroUsuario{
+    max-width: 300px;
+  }
+}

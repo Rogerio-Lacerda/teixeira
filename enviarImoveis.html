@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teixeira Imobiliaria | Cadastro de Imoveis </title>
+  <meta name="description" content="A TEIXEIRA IMÓVEIS conta atualmente e coloca a sua disposição um quadro de funcionários e colaboradores treinados para oferecer-lhe soluções em qualquer seguimento do ramo imobiliário, tais como, compra, venda, locação e administração de imóveis.">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+</head>
+
+<body class="body-enviarImoveis">
+
+  <header class="header">
+    <div class="logo-header" href="./index.html">
+      <div>
+        <h1 class="h1-logo-header cor-p2">Teixeira</h1>
+        <p class="p-logo-header cor-0">IMOBILIÁRIA</p>
+        <span class="span-logo-header cor-0">CRECI SP 19618-J</span>
+      </div>
+    </div>
+  </header>
+
+  <article class="titulo-enviarImoveis">
+    <h2 class="font-1-xxl2 cor-0">Cadastro de Imoveis</h2>
+    <p class="font-2-l">*IMPORTANTE selecionar e preencher todos os campos para os Imoveis serem Cadastrados corretamente</p>
+  </article>
+
+  <form class="form-enviarImoveis" action="" method="POST" enctype="multipart/form-data">
+
+    <div class="container-enviarImoveis">
+
+      <div class="form-finalidade font-1-m cor-0">
+        <h4 class="cor-0 font-2-m">Finalidade</h4>
+        <select name="finalidade_id" id="finalidade_id" required>
+          <option value="venda">Venda</option>
+          <option value="locacao">Locaçao</option>
+        </select>
+      </div>
+
+      <div class="form-finalidade font-1-m cor-0">
+        <h4 class="cor-0 font-2-m">Tipo</h4>
+        <select id="tipo_id" name="tipo_id" required>
+          <option value="todos">Todos</option>
+          <option value="apartamento">Apartamento</option>
+          <option value="casa">Casa</option>
+          <option value="casaTerrea">Casa Térrea</option>
+          <option value="chacara">Chacára</option>
+          <option value="galpao">Galpão</option>
+          <option value="lojaComercial">Loja Comercial</option>
+          <option value="predio">Predio</option>
+          <option value="sala">Sala</option>
+          <option value="salao">Salão</option>
+          <option value="sobrado">Sobrado</option>
+          <option value="terreno">Terreno</option>
+        </select>
+      </div>
+
+      <div class="form-finalidade font-1-m cor-0">
+        <h4 class="cor-0 font-2-m">Cidade</h4>
+        <select id="cidade_id" name="cidade_id" required>
+          <option value="todasCidades">Todos</option>
+          <option value="atibaia">Atibaia</option>
+          <option value="barueri">Barueri</option>
+          <option value="cajamar">Cajamar</option>
+          <option value="cambuiMg">Cambuí-MG</option>
+          <option value="campoLimpo">Campo Limpo Paulista</option>
+          <option value="caraguatatuba">Caraguatatuba</option>
+          <option value="carapicuiba">Carapícuiba</option>
+          <option value="cotia">Cotia</option>
+          <option value="francoRocha">Franco da Rocha</option>
+          <option value="jarimu">Jarimu</option>
+          <option value="maripora">Mariporã</option>
+          <option value="osasco">Osasco</option>
+          <option value="pirajui">Pirajuí</option>
+          <option value="praiaEnseada">Praia da Enseada</option>
+          <option value="praiaGrande">Praia Grande</option>
+          <option value="sabino">Sabino</option>
+          <option value="santanaParnaiba">Santana de Parnaíba</option>
+          <option value="saoPaulo">São Paulo</option>
+          <option value="saoRoque">São Roque</option>
+          <option value="taboaoSerra">Taboao da Serra</option>
+          <option value="tremenbe">Tremenbé</option>
+        </select>
+      </div>
+
+      <div class="form-finalidade font-1-m cor-0">
+        <h4 class="cor-0 font-2-m">Bairro</h4>
+        <select id="bairro_id" name="bairro_id" required>
+
+        </select>
+      </div>
+
+      <div class="form-finalidade font-1-m cor-0">
+        <h4 class="cor-0 font-2-m">Dormitoríos</h4>
+        <select id="dormitorio_id" name="dormitorio_id" required>
+          <option value="qualquerDorm">Qualquer</option>
+          <option value="umDorm">1</option>
+          <option value="doisDorm">2</option>
+          <option value="tresDorm">3</option>
+          <option value="quatroDorm">4</option>
+          <option value="cincoDormMais">5 ou Mais</option>
+        </select>
+      </div>
+
+
+      <div class="form-finalidade font-1-m cor-0">
+        <h4 class="cor-0 font-2-m">Vagas</h4>
+        <select id="vaga_id" name="vaga_id" required>
+          <option value="qualquerVaga">Qualquer</option>
+          <option value="umaVaga">1</option>
+          <option value="duasVaga">2</option>
+          <option value="tresVagaMais">3 ou Mais</option>
+        </select>
+      </div>
+
+      <div class="form-finalidade font-1-m cor-0">
+        <h4 class="cor-0 font-2-m">Banheiros</h4>
+        <select id="banheiro_id" name="banheiro_id" required>
+          <option value="qualquerBanheiro">Qualquer</option>
+          <option value="umBanheiro">1</option>
+          <option value="doisBanheiro">2</option>
+          <option value="tresBanheiroMais">3 ou Mais</option>
+        </select>
+      </div>
+    </div>
+
+    <section class="section-enviarImoveis">
+      <div class="container2-enviarImoveis">
+
+        <div>
+          <label for="imagemImovel" class="font-2-m cor-0">Imagem do Imóvel</label>
+          <input type="file" name="imagem_imovel" id="imagemImovel" class="font-2-m cor-0" required>
+        </div>
+
+        <div>
+          <label for="tituloImovel" class="font-2-m cor-0">Titulo do Imóvel</label>
+          <input type="text" name="nome_imovel" id="tituloImovel" class="font-2-m cor-12" required>
+        </div>
+
+        <div>
+          <label for="localImovel" class="font-2-m cor-0">Local do Imovel</label>
+          <input type="text" name="local_imovel" id="localImovel" class="font-2-m cor-12" required>
+        </div>
+
+
+        <div>
+          <label for="metrosImovel" class="font-2-m cor-0">Metros quadrados do Imóvel</label>
+          <input type="text" name="metros_imovel" id="metrosImovel" class="font-2-m cor-12" required>
+        </div>
+
+
+        <div>
+          <label for="vagasImovel" class="font-2-m cor-0">Vagas do Imóvel</label>
+          <input type="text" name="vagas_imovel" id="vagasImovel" class="font-2-m cor-12" required>
+        </div>
+
+        <div>
+          <label for="banheirosImovel" class="font-2-m cor-0">Banheiros do Imóvel</label>
+          <input type="text" name="banheiros_imovel" id="banheirosImovel" class="font-2-m cor-12" required>
+        </div>
+
+        <div>
+          <label for="dormitorioImovel" class="font-2-m cor-0">Dormitorios do Imóvel</label>
+          <input type="text" name="dormitorio_imovel" id="dormitorioImovel" class="font-2-m cor-12" required>
+        </div>
+
+        <div>
+          <label for="valorImovel" class="font-2-m cor-0">Valor do Imóvel</label>
+          <input type="text" name="valor_imovel" id="valorImovel" class="font-2-m cor-12" required>
+        </div>
+
+        <div>
+          <label for="referenciaImovel" class="font-2-m cor-0">Referência do Imóvel</label>
+          <input type="text" name="referencia_imovel" id="referenciaImovel" class="font-2-m cor-12" required>
+        </div>
+
+        <input class="submitCadastro font-2-l cor-0" type="submit" name="submit" id="submit" value="Cadastar Imovel">
+
+      </div>
+
+      <div class="conteudo_enviarImoveis">
+        <h2 class="font-1-l cor-0">Exemplo de Como Ficara o Imovel quando Cadastrado</h2>
+        <div class="venda-1">
+          <sup class="font-1-xs">*Imagem do Imovel</sup>
+          <a href="#"><img src="./images/imagens/casaTerrea.jpg" alt=""></a>
+          <div class="conteudo-venda1">
+            <div>
+              <h3 class="font-1-l cor-p1">Casa Terréa <sup class="font-1-xs">*Titulo do Imovel</sup></h3>
+              <p class="font-2-m cor-10">Jardim Santo Elias - São Paulo <sup class="font-1-xs">*Local do Imovel</sup></p>
+            </div>
+            <ul class="comodidades font-1-xs cor-12">
+              <li><img src="./images/imagens/regua-triangular (1).png" alt=""> 140m²</li>
+              <li><img src="./images/imagens/cama.png" alt=""> 2 Dormitórios</li>
+              <li> <img src="./images//imagens/banheira.png" alt=""> 2 Banheiros</li>
+              <li><img src="./images/imagens/garagem.png" alt=""> 2 Vagas</li>
+            </ul>
+            <sup class="font-1-xs supItens">*Itens do Imovel</sup>
+            <p class="font-2-xl cor-p1">R$ 290.000,00<sup class="font-1-xs">*Valor do Imovel</sup></p>
+          </div>
+    </section>
+  </form>
+
+
+
+  <script src="./js/enviarImoveis.js"></script>
+</body>
+
+</html>

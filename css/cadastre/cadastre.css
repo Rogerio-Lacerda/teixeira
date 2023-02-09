@@ -1,0 +1,158 @@
+.cadastre{
+  display: grid;
+  gap: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cadastre h2{
+  border-bottom: 2px solid var(--cor-p1);
+  text-align: center;
+  color: var(--cor-p1);
+  padding-bottom: 12px;
+  max-width: max-content;
+  justify-self: center;
+}
+
+.cadastre > h3{
+  margin-left: 24px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--cor-p2);
+  max-width: max-content;
+}
+
+.form-cadastre{
+  justify-self: center;
+  background-color: var(--cor-p1);
+  padding: 40px 24px;
+  border: 4px solid var(--cor-p2);
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr;
+  min-width: 800px;
+}
+
+.proprietario{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 16px;
+  margin-bottom: 60px;
+}
+
+.proprietario h3{
+  grid-column: 1/-1;
+}
+
+.proprietario h3::after, .imovel h3::after{
+  content: "";
+  display: block;
+  width: 16px;
+  height: 5px;
+  background-color: var(--cor-p2);
+}
+
+.proprietario > div, .imovel > div{
+  display: grid;
+  gap: 8px;
+}
+
+.proprietario input, .proprietario textarea, .imovel input, .imovel textarea{
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+.proprietario input, .proprietario textarea, .imovel input, .imovel textarea{
+  font: 400 1.125rem/1.35 "Poppins", san-serif;
+}
+
+.imovel{
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 20px 16px;
+  margin-bottom: 60px;
+}
+
+.imovel select{
+   padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font: 400 1.125rem/1.35 "Poppins", san-serif;
+}
+
+#estado{
+  align-self: flex-end;
+}
+
+
+@media(max-width: 900px){
+  .form-cadastre{
+    min-width: initial;
+  }
+}
+
+@media(max-width: 730px){
+  .proprietario{
+    justify-self: start;
+  }
+
+  .imovel{
+    grid-template-columns: auto auto ;
+    justify-self: start;
+  }
+}
+
+@media(max-width: 630px){
+  .cadastre {
+    gap: 30px;
+  }
+
+  .proprietario, .imovel{
+    justify-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  .proprietario input, .imovel input, .proprietario textarea, .imovel textarea{
+    min-width: 300px;
+  }
+
+  .cadastre > h3{
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 560px){
+  .cadastre > h2{
+    font-size: 2rem;
+  }
+}
+
+@media(max-width: 470px){
+  .cadastre > h2{
+    font-size: 1.8rem;
+  }
+
+  .form-cadastre h3{
+    font-size: 1.3rem;
+  }
+
+  .cadastre > h3{
+    font-size: 1.2rem;
+    max-width: 25ch;
+    border-bottom: initial;
+  }
+
+  .cadastre > h3:after{
+  content: "";
+  display: block;
+  width: 16px;
+  height: 5px;
+  background-color: var(--cor-p2);
+  }
+}
+
+@media(max-width: 380px){
+  .proprietario input, .imovel input, .proprietario textarea, .imovel textarea{
+    min-width: 200px;
+  }
+}

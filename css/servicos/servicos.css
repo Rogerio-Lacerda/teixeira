@@ -1,0 +1,111 @@
+.servicos{
+  display: grid;
+  gap: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.servicos h2{
+  border-bottom: 2px solid var(--cor-p1);
+  text-align: center;
+  color: var(--cor-p1);
+  padding-bottom: 12px;
+  max-width: max-content;
+  justify-self: center;
+}
+
+.conteudo-servicos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  justify-self: center;
+  padding: 16px;
+}
+
+.historia-servicos{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-self: start;
+  align-self: start;
+}
+
+
+.historia-servicos h3{
+  border-bottom: 2px solid var(--cor-p2);
+  max-width: max-content;
+  padding-bottom: 12px;
+}
+
+.historia-servicos p{
+  max-width: 40ch;
+}
+
+.servico{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:40px;
+}
+
+.imobiliario, .juridico{
+  display: grid;
+  gap: 16px;
+}
+
+.imobiliario li::after{
+  content: "";
+  display: block;
+  width: 8px;
+  height: 6px;
+  background-color: var(--cor-p2);
+}
+
+.servico li::after{
+  content: "";
+  display: block;
+  width: 8px;
+  height: 3px;
+  background-color: var(--cor-p2);
+}
+
+@media(max-width: 955px){
+  .conteudo-servicos{
+    grid-template-columns: 1fr;
+  }
+
+  .historia-servicos p{
+    max-width: 60ch;
+  }
+  
+  .servico{
+    justify-self: center;
+  }
+}
+
+@media(max-width: 560px){
+  .historia-servicos h3{
+    font-size: 1.2rem;
+  }
+
+  .historia-servicos > p{
+    font-size: 1rem;
+  }
+
+  .servico{
+    grid-template-columns: 1fr;
+    justify-self: start;
+  }
+}
+
+@media(max-width: 470px){
+  .servicos h2{
+    font-size: 2rem;
+   }
+}
+
+@media(max-width: 400px){
+  .historia-servicos h3{
+    font-size: 1rem;
+  }
+}

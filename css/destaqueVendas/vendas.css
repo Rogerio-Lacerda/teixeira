@@ -1,0 +1,184 @@
+.destaque-vendas{
+  padding: 30px;
+ position: relative;
+}
+
+.watch-slider{
+  overflow: hidden;
+}
+
+.venda-1 > a img{
+  width: 400px;
+  /* min-width: 400px; */
+  border-radius: 4px;
+}
+
+.titulo-vendas {
+  margin-bottom: 40px;
+}
+
+.venda-1{
+  border: 2px solid var(--cor-p2) ;
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 16px;
+ padding: 10px;
+ margin-right: 20px;
+ border-radius: 4px;
+ max-width: max-content;
+}
+
+.venda-1 div:last-child{
+  margin-right: 0;
+}
+
+.conteudo-venda1{
+  align-self: start;
+  display: grid;
+  margin-top: 20px;
+  gap: 26px;
+}
+
+.comodidades{
+  display: flex;
+  gap: 16px;
+  border: 2px solid var(--cor-p1);
+  padding: 8px;
+  border-radius: 4px;
+  justify-self: start;
+}
+
+.comodidades li{
+  font-weight: bold;
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  align-items: center;
+  /* font-size: 0.6rem; */
+}
+
+.watch-slider .venda-1{
+  transform: scale(0.9);
+}
+
+.watch-slider .venda-1.slick-center{
+ transform: scale(1);
+}
+
+.seta-esquerda{
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  width: 80px;
+  background-color: var(--cor-p1);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.seta-direita{
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  width: 80px;
+  background-color: var(--cor-p1);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  right: 30px;
+}
+
+ .seta-direita, .seta-esquerda{
+    top: 55%;
+    opacity: 0.5;
+  }
+
+
+.seta-direita:hover, .seta-esquerda:hover{
+  opacity: 1;
+}
+
+.seta-esquerda img, .seta-direita img{
+  width: 60px;
+}
+
+.alo{
+  display: none;
+}
+
+
+@media(max-width: 840px){
+  .venda-1{
+    margin-right: 10px;
+    /* max-width: 600px; */
+  }
+
+  .venda-1 > a img{
+     width: 480px;
+     /* align-self: center; */
+  }
+
+  .venda-1 > a{
+    justify-self: center;
+  }
+}
+
+@media(max-width: 600px){
+  .titulo-vendas{
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 560px){
+  .venda-1 > a img{
+    width: 350px;
+  }
+
+  .seta-direita, .seta-esquerda{
+    top: 55%;
+    opacity: 0.5;
+    width: initial;
+  }
+
+
+  .seta-esquerda img, .seta-direita img{
+  width: 40px;
+}
+
+
+
+}
+
+@media(max-width: 460px){
+  .titulo-vendas{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width: 430px){
+  .venda-1 > a img{
+    width: 320px;
+  }
+
+  .comodidades li{
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width: 390px){
+
+  .venda-1{
+    width: 290px;
+  }
+  .comodidades li{
+    font-size: 0.6rem;
+  }
+
+  .titulo-vendas{
+    font-size: 1.4rem;
+  }
+}

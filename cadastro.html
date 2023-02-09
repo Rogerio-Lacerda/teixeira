@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teixeira Imobiliaria | Cadastro de usuário</title>
+  <meta name="description" content="A TEIXEIRA IMÓVEIS conta atualmente e coloca a sua disposição um quadro de funcionários e colaboradores treinados para oferecer-lhe soluções em qualquer seguimento do ramo imobiliário, tais como, compra, venda, locação e administração de imóveis.">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="bodyCadastro">
+  <header class="header">
+    <div class="logo-header" href="./index.html">
+      <div>
+        <h1 class="h1-logo-header cor-p2">Teixeira</h1>
+        <p class="p-logo-header cor-0">IMOBILIÁRIA</p>
+        <span class="span-logo-header cor-0">CRECI SP 19618-J</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="cadastroUsuario">
+    <form action="cadastro.php" method="POST">
+      <fieldset>
+        <legend class="font-1-l cor-0">Cadastro de usuário</legend>
+
+        <div class="inputBox">
+          <input type="text" name="nome" id="nome" class="inputUser font-2-m cor-0" required>
+          <label for="nome" class="labelInput font-2-m cor-0">Nome completo</label>
+        </div>
+
+        <div class="inputBox">
+          <input type="text" name="email" id="email" class="inputUser font-2-m cor-0" required>
+          <label for="email" class="labelInput font-2-m cor-0">Email</label>
+        </div>
+
+        <div class="inputBox">
+          <input type="tel" name="telefone" id="telefone" class="inputUser inputTelefone font-2-m cor-0" placeholder="Ex: 11 9999-9999" required>
+          <label for="telefone" class="labelInput font-2-m cor-0">Telefone</label>
+        </div>
+
+        <div class="inputBox">
+          <input type="password" name="senha" id="senha" class="inputUser font-2-m cor-0" required>
+          <label for="senha" class="labelInput font-2-m cor-0">Cadastre uma senha</label>
+          <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+
+        <input class="submitCadastro font-2-l cor-0" type="submit" name="submit" id="submit" value="Cadastrar">
+      </fieldset>
+    </form>
+  </section>
+
+  <script src="./js/cadastro.js"></script>
+</body>
+
+</html>

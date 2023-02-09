@@ -1,0 +1,156 @@
+.body-enviarImoveis {
+  background-color: var(--cor-p1);
+}
+
+.titulo-enviarImoveis {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+}
+
+.titulo-enviarImoveis h2 {
+  /* border-color: var(--cor-p2); */
+  border-bottom: 2px solid var(--cor-p2);
+  text-align: center;
+  max-width: max-content;
+  justify-self: center;
+}
+
+.titulo-enviarImoveis p {
+  max-width: 70ch;
+  color: #db4a2e;
+  font-size: 1.3rem;
+}
+
+.form-enviarImoveis {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container-enviarImoveis {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+
+.section-enviarImoveis {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.container2-enviarImoveis {
+  display: grid;
+  gap: 45px;
+  border-right: 2px solid var(--cor-p2);
+}
+
+.container2-enviarImoveis > div {
+  display: grid;
+  gap: 8px;
+}
+
+.container2-enviarImoveis input {
+  max-width: 40ch;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+.container2-enviarImoveis label::before {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 16px;
+  background-color: var(--cor-p2);
+}
+
+.container2-enviarImoveis > .submitCadastro{
+  justify-self: left;
+}
+
+.conteudo_enviarImoveis {
+  display: grid;
+  align-self: start;
+  padding: 8px;
+  justify-content: center;
+  justify-items: center;
+  border-radius: 8px;
+  gap: 16px;
+}
+
+.conteudo_enviarImoveis > .venda-1 {
+  background-color: var(--cor-0);
+}
+
+sup {
+  color: #db4a2e !important;
+}
+
+.supItens {
+  margin-top: -17px;
+}
+
+@media (max-width: 1250px) {
+  .container-enviarImoveis {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .container-enviarImoveis {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 950px) {
+  .container2-enviarImoveis input {
+    max-width: 30ch;
+  }
+}
+
+@media (max-width: 890px) {
+  .section-enviarImoveis {
+    grid-template-columns: 1fr;
+  }
+
+  .container2-enviarImoveis {
+    border-right: none;
+    border-bottom: 2px solid var(--cor-p2);
+    padding-bottom: 20px;
+  }
+
+  .container2-enviarImoveis input {
+    max-width: 40ch;
+  }
+}
+
+@media (max-width: 780px) {
+  .container-enviarImoveis {
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+  }
+
+  .titulo-enviarImoveis h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .container-enviarImoveis {
+    grid-template-columns: 270px;
+  }
+
+  .container2-enviarImoveis input {
+    max-width: 30ch;
+  }
+  .titulo-enviarImoveis h2 {
+    font-size: 1.6rem;
+  }
+  .titulo-enviarImoveis p {
+    font-size: 1.1rem;
+  }
+}

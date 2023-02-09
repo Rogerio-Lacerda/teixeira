@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Belwe-bold';
+  src: url('./fonts/belwe\ bold\ bt.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Belwe-condensed';
+  src: url('./fonts/belwe\ condensed\ bt.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Belwe-light';
+  src: url('./fonts/belwe\ light\ bt.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Belwe-medium';
+  src: url('./fonts/BelweMediumBT.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Aldine';
+  src: url('./fonts/aldine-721-bt.ttf') format('truetype');
+}
+
+.font-1-xxl {
+  font: 600 4rem/1.3 "Poppins", san-serif;
+}
+
+.font-1-xxl2 {
+  font: 600 3rem/1.3 "Poppins", san-serif;
+}
+
+
+.font-1-xl {
+  font: 600 2rem/1.25 "Poppins", san-serif;
+}
+
+.font-1-l {
+  font: 400 1.5rem/1.5 "Poppins", san-serif;
+}
+
+.font-1-l-b {
+  font: 600 1.5rem/1.5 "Poppins", san-serif;
+}
+
+.font-2-l {
+  font: 400 1.2rem/1.5 "Roboto", san-serif;
+}
+
+.font-2-xl {
+  font: 400 2rem/1.5 "Roboto", san-serif;
+}
+
+.font-2-l-b {
+  font: 500 1.5rem/1.5 "Roboto", san-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+}
+
+.font-1-m {
+  font: 400 1.125rem/1.35 "Poppins", san-serif;
+}
+
+.font-1-m-b {
+  font: 600 1.125rem/1.35 "Poppins", san-serif;
+}
+
+.font-2-m {
+  font: 500 1.125rem/1.35 "Roboto", san-serif;
+}
+
+.font-1-s {
+  font: 400 1rem/1.4 "Poppins", san-serif;
+}
+
+.font-2-s {
+  font: 400 1rem/1.4 "Roboto", san-serif;
+}
+
+.font-2-xs {
+  font: 400 0.875rem/1.43 "Roboto", san-serif;
+}
+
+.font-2-xs-b {
+  font: 600 0.875rem/1.43 "Roboto", san-serif;
+}
+
+.font-1-xs {
+  font: 400 0.875rem/1.43 "Poppins", san-serif;
+}
+
+.h1-logo-header{
+  font-family: 'Belwe-bold';
+}
+
+.p-logo-header, .span-logo-header{
+  font-family: 'Aldine';
+}
+
+.titulo-footer h2{
+  font-family: 'Belwe-bold';
+}

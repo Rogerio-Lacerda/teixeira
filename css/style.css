@@ -1,0 +1,31 @@
+@import './global.css/global.css';
+@import './utilidades/tipografia.css';
+@import './utilidades/cores.css';
+@import './global.css/header.css';
+@import './global.css/footer.css';
+@import './utilidades/componentes.css';
+
+
+/* Empresa */
+@import './sobre/sobre.css';
+
+/* Serviços */
+@import './servicos/servicos.css';
+
+/* Cadastre */
+@import './cadastre/cadastre.css';
+
+/* Contato */
+@import './contato/contato.css';
+
+/* vendas */
+@import './destaqueVendas/vendas.css';
+
+/* cadastro */
+@import './cadastro/cadastro.css';
+
+/* enviarImoveis */
+@import './enviarImoveis/enviarImoveis.css';
+
+/* descrição imovel */
+@import './descriImovel/descriImovel.css';
